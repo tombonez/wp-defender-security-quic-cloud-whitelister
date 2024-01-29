@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset name="WP Defender Security QUIC.cloud Whitelister">
+	<description>A WordPress plugin to whitelist the IP addresses of QUIC.cloud servers in Defender Security.</description>
+	<file>wp-defender-security-quic-cloud-whitelister.php</file>
+	<arg name="extensions" value="php"/>
+	<arg value="-colors"/>
+	<rule ref="WordPress-Extra">
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+	</rule>
+</ruleset>

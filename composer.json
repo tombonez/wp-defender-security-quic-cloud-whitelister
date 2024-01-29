@@ -1,0 +1,40 @@
+{
+    "name": "tombonez/wp-defender-security-quic-cloud-whitelister",
+    "description": "A WordPress plugin to whitelist the IP addresses of QUIC.cloud servers in Defender Security.",
+    "homepage": "https://github.com/tombonez/wp-defender-security-quic-cloud-whitelister",
+    "type": "wordpress-muplugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Taylor",
+            "homepage": "https://github.com/tombonez"
+        }
+    ],
+    "keywords": [
+        "defender-security",
+        "security",
+        "wordpress",
+        "wordpress-plugin"
+    ],
+    "support": {
+        "issues": "https://github.com/tombonez/wp-defender-security-quic-cloud-whitelister/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "roave/security-advisories": "dev-latest",
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "scripts": {
+        "phpcbf": "vendor/bin/phpcbf",
+        "phpcs": "vendor/bin/phpcs"
+    }
+}
